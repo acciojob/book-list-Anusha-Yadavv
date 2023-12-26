@@ -13,5 +13,10 @@ document.getElementById("title").value="";
 document.getElementById("author").value="";
 document.getElementById("isbn").value="";
 
+	let deleteButton=newRow.querySelector('.delete');
+	deleteButton.addEventListener("click",function(){
+		tbodyElement.deleteRow(newRow,rowIndex);
+	})
+
 	
 })
