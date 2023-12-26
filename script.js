@@ -7,6 +7,7 @@ subimtElement.addEventListener("click",(event)=>{
 	let isbnValue=document.getElementById("isbn").value;
 
 	let tbodyElement=document.getElementById("book-list");
-	let newRow=tbodyElement.insertRow()
+	let newRow=tbodyElement.insertRow();
+	newRow.innerHTML=`<td>${titleValue}</td><td>${authorValue}</td><td>${isbnValue}</td>`
 
 })
