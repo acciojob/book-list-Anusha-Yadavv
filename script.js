@@ -15,7 +15,7 @@ document.getElementById("isbn").value="";
 
 	let deleteButton=newRow.querySelector('.delete');
 	deleteButton.addEventListener("click",function(){
-		tbodyElement.deleteRow(newRow,rowIndex);
+		tbodyElement.deleteRow(newRow.rowIndex);
 	})
 
 	
